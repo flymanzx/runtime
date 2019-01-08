@@ -448,9 +448,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangxin.runtime;
+				PRODUCT_BUNDLE_IDENTIFIER = "--ZX-BUILD-ID-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				ZX_BUILD_ID = com.zhangxin12345.123;
+				ZX_BUILD_NAME = RUNTIMETEST;
 			};
 			name = Debug;
 		};
@@ -459,15 +461,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangxin.runtime;
+				PRODUCT_BUNDLE_IDENTIFIER = "--ZX-BUILD-ID-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				ZX_BUILD_ID = com.zhangxin.123;
+				ZX_BUILD_NAME = RUNTIMEA;
 			};
 			name = Release;
 		};
