@@ -15,6 +15,7 @@
 		5B1AE15721E4F9D100F3613F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AE15621E4F9D100F3613F /* main.m */; };
 		5B1AE16121E4F9D100F3613F /* runtimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AE16021E4F9D100F3613F /* runtimeTests.m */; };
 		5B1AE16C21E4F9D100F3613F /* runtimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AE16B21E4F9D100F3613F /* runtimeUITests.m */; };
+		5B1AE17B21E4FA1800F3613F /* NSObject+CrashLogHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AE17A21E4FA1800F3613F /* NSObject+CrashLogHandle.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5B1AE16721E4F9D100F3613F /* runtimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runtimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1AE16B21E4F9D100F3613F /* runtimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeUITests.m; sourceTree = "<group>"; };
 		5B1AE16D21E4F9D100F3613F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1AE17921E4FA1800F3613F /* NSObject+CrashLogHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CrashLogHandle.h"; sourceTree = "<group>"; };
+		5B1AE17A21E4FA1800F3613F /* NSObject+CrashLogHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CrashLogHandle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				5B1AE14821E4F9D000F3613F /* AppDelegate.m */,
 				5B1AE14A21E4F9D000F3613F /* ViewController.h */,
 				5B1AE14B21E4F9D000F3613F /* ViewController.m */,
+				5B1AE17921E4FA1800F3613F /* NSObject+CrashLogHandle.h */,
+				5B1AE17A21E4FA1800F3613F /* NSObject+CrashLogHandle.m */,
 				5B1AE14D21E4F9D000F3613F /* Main.storyboard */,
 				5B1AE15021E4F9D100F3613F /* Assets.xcassets */,
 				5B1AE15221E4F9D100F3613F /* LaunchScreen.storyboard */,
@@ -264,6 +269,7 @@
 			files = (
 				5B1AE14C21E4F9D000F3613F /* ViewController.m in Sources */,
 				5B1AE15721E4F9D100F3613F /* main.m in Sources */,
+				5B1AE17B21E4FA1800F3613F /* NSObject+CrashLogHandle.m in Sources */,
 				5B1AE14921E4F9D000F3613F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
